@@ -89,9 +89,7 @@ public class TV {
     public void setNombrered(String Nombrered) {
         this.Nombrered = Nombrered;
     }
-    
-    
-    
+       
     public void encender(){
         this.estado=true;
     }
@@ -167,5 +165,12 @@ public class TV {
         this.Nombrered = "";
         this.entrada=Entradas.cable;
     }
+
+    @Override
+    public String toString() {
+        return "TV{" + "canal=" + canal + ", volumen=" + volumen + ", contraste=" + contraste + ", brillo=" + brillo + ", estado=" + estado + ", fecha=" + fecha + ", internet=" + internet + ", silenciado=" + silenciado + ", contrase\u00f1a=" + contraseña + ", Nombrered=" + Nombrered + ", entrada=" + entrada + '}';
+    }
         
+    
+    
 }
